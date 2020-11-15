@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Batara</string>
+    <!--Auth String-->
+    <string name="til_email">Email Address</string>
+    <string name="til_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="til_username">Username</string>
+    <string name="til_confirm_pass">Confirm Password</string>
+    <!--Error Message-->
+    <string name="text_empty">This Field is Empty</string>
+    <string name="text_invalid_email">Invalid Email Address</string>
+    <string name="text_pass_not_match">Password Didn\'t Match</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ic_home">Home</string>
+    <string name="ic_history">History</string>
+    <string name="ic_puzzle">Puzzle</string>
+    <string name="ic_profile">Profile</string>
+    <string name="btn_back">Back Button</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="introduction">Introduction</string>
+    <string name="easy">Easy</string>
+    <string name="start">Start</string>
+    <string name="hi_name">Hi, Name</string>
+    <string name="what_would_you_like_to_learn_today">What would you like to learn today?</string>
+    <string name="my_learn_path">My learn path</string>
+    <string name="bahasa">Bahasa Sunda</string>
+    <string name="latest_course">Popular Course</string>
+    <string name="course">Course</string>
+    <string name="course_s_title">Course\'s Title</string>
+    <string name="title_of_bahasa">Title of Bahasa</string>
+    <string name="choose_the_language">Choose The Language</string>
+    <string name="no_course_text">You have not started any course yet. Lets start to explore the courses.</string>
+    <string name="tv_smart_scan">Smart Scan</string>
+    <string name="tv_complete_scan">Scan Completed!</string>
+    <string name="img_picture">Image Icon</string>
+    <string name="tv_image_title">Patung Suro dan Boyo</string>
+    <string name="tv_location">Surabaya, Jawa Timur</string>
+    <string name="btn_view">View The Language</string>
+    <string name="tv_flashcard">FlashCard</string>
+    <string name="btn_switch_lang">Sunda</string>
+    <string name="img_cover_title">Cover</string>
+    <string name="tv_challenges">Challenges</string>
+    <string name="on_progress">On Progress</string>
+    <string name="image_background">Image Background</string>
+    <string name="surabaya_fact">
+        Surabaya is the capital city of East Java Province, Indonesia, as well as the largest metropolitan city in the province. Surabaya is also the second largest city in Indonesia after Jakarta.
+It is known as the City of Heroes because of its history which was taken into account in the struggle of Arek-Arek Suroboyo (Surabaya youths) in defending the independence of the Indonesian nation from invaders.
+    </string>
+    <string name="tv_food_question">Which food comes from West Java and is a characteristic of Sundanese?</string>
+</resources>
