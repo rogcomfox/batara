@@ -42,7 +42,7 @@
             android:layout_marginTop="20dp"
             android:max="10"
             android:progress="2"
-            android:progressTint="@color/colorYellow"
+            android:progressTint="@color/colorPink"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="20dp"
@@ -64,15 +64,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#51ACFF">
+                android:background="@color/colorPink">
 
                 <TextView
                     android:id="@+id/tv_question"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunito"
+                    android:fontFamily="@font/nunito_semibold"
                     android:text="@string/tv_food_question"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:layout_marginStart="50dp"
                     android:layout_marginTop="25dp"
@@ -177,12 +177,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
-            android:backgroundTint="@color/colorYellow"
             android:padding="10dp"
             android:text="Start"
             android:fontFamily="@font/nunito"
             android:textSize="24sp"
-            android:textColor="@android:color/black"
             app:cornerRadius="20dp"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"

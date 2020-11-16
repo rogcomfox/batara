@@ -27,21 +27,20 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/nunito_bold"
                 android:text="@string/tv_flashcard"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="28sp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_switch_lang"
+            <TextView
+                android:id="@+id/tv_lang"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_flashcard"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/colorYellow"
-                android:fontFamily="@font/nunito"
+                android:fontFamily="@font/nunito_semibold"
                 android:text="@string/btn_switch_lang"
                 android:textAllCaps="false"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="20sp"
                 app:cornerRadius="10dp" />
 
@@ -51,9 +50,9 @@
                 android:layout_height="120dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="60dp"
-                android:scaleType="centerCrop"
                 android:layout_marginEnd="30dp"
                 android:contentDescription="@string/img_cover_title"
+                android:scaleType="centerCrop"
                 android:src="@drawable/cover_judul" />
         </RelativeLayout>
 
@@ -97,36 +96,39 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_challenges">
+
             <RelativeLayout
-                android:background="@drawable/card_selector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:id="@+id/tv_name"
-                    android:text="Food"
-                    android:fontFamily="@font/nunito"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:fontFamily="@font/nunito"
+                    android:text="Food"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
                 <TextView
                     android:id="@+id/tv_question"
-                    android:fontFamily="@font/nunito_light"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/white"
-                    android:layout_marginStart="15dp"
-                    android:layout_below="@id/tv_name"
-                    android:text="3 Questions"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="3 Questions"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_alignParentEnd="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/chef"/>
+                    android:src="@drawable/chef" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -141,38 +143,42 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_food">
+
             <RelativeLayout
-                android:background="@drawable/card_selector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:id="@+id/tv_name_animals"
-                    android:text="Animals"
-                    android:fontFamily="@font/nunito"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:fontFamily="@font/nunito"
+                    android:text="Animals"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
                 <TextView
                     android:id="@+id/tv_question_animals"
-                    android:fontFamily="@font/nunito_light"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/white"
-                    android:layout_marginStart="15dp"
-                    android:layout_below="@id/tv_name_animals"
-                    android:text="4 Questions"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name_animals"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="4 Questions"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_alignParentEnd="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/animal"/>
+                    android:src="@drawable/animal" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card_daily"
             android:layout_width="match_parent"
@@ -182,40 +188,43 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_animals">
+
             <RelativeLayout
-                android:background="@drawable/card_selector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:id="@+id/tv_name_daily"
-                    android:text="Daily Conversation"
-                    android:fontFamily="@font/nunito"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:fontFamily="@font/nunito"
+                    android:text="Daily Conversation"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
                 <TextView
                     android:id="@+id/tv_question_daily"
-                    android:fontFamily="@font/nunito_light"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/white"
-                    android:layout_marginStart="15dp"
-                    android:layout_below="@id/tv_name_daily"
-                    android:text="3 Questions"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_name_daily"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/nunito_light"
+                    android:text="3 Questions"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_alignParentEnd="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/daily"/>
+                    android:src="@drawable/daily" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

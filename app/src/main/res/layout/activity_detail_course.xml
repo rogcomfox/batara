@@ -79,7 +79,6 @@
         android:layout_marginStart="28dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/colorYellow"
         android:padding="10dp"
         android:text="Start"
         android:textColor="@android:color/black"

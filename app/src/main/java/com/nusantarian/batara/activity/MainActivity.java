@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(binding.getRoot());
 
         binding.navigation.setOnNavigationItemSelectedListener(this);
-        binding.floatingButton.setOnClickListener(this);
+        binding.fabAr.setOnClickListener(this);
         getSupportFragmentManager().addOnBackStackChangedListener(this);
 
         fm.beginTransaction().add(R.id.frame_main, fragment4, "4").hide(fragment4).commit();
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.floating_button){
+        if (v.getId() == R.id.fab_ar){
             startActivity(new Intent(MainActivity.this, ArScanActivity.class));
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }

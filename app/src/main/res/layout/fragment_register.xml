@@ -136,14 +136,15 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="40dp"
-            android:backgroundTint="@color/colorYellow"
             android:padding="10dp"
             android:text="@string/btn_register"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/nunito_semibold"
+            android:textAllCaps="false"
             app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/til_confirm_pass" />
 
         <ProgressBar

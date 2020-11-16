@@ -152,7 +152,6 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_go_to_course"
                     android:layout_width="wrap_content"
-                    android:backgroundTint="@color/colorYellow"
                     app:cornerRadius="20dp"
                     android:text="Go to Course"
                     android:fontFamily="@font/nunito"

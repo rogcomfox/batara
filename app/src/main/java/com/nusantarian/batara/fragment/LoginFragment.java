@@ -68,9 +68,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                             try {
                                 if (response.code() == 200) {
                                     res = response.body();
-                                    String token = res.getToken();
+                                    String token = Objects.requireNonNull(res).getToken();
                                     user = res.getUser();
-                                    session.saveUser(user);
+//                                    session.saveUser(user);
                                     session.saveToken(token);
                                     Log.d("TAG", "onResponse: "+session.getToken());
                                     Log.d("TAG", "onResponse: "+session.getUser().getFullName());
@@ -78,7 +78,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                                     Intent intent = new Intent(getActivity(), MainActivity.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                     startActivity(intent);
-                                    getActivity().finish();
+                                    Objects.requireNonNull(getActivity()).finish();
                                 } else {
                                     message = Objects.requireNonNull(response.errorBody()).string();
                                 }
