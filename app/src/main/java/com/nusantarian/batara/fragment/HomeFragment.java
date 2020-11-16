@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nusantarian.batara.R;
 import com.nusantarian.batara.activity.ChooseLanguageActivity;
+import com.nusantarian.batara.activity.GrammarActivity;
 import com.nusantarian.batara.adapter.CourseAdapter;
 import com.nusantarian.batara.adapter.LatestCourseAdapter;
 import com.nusantarian.batara.data.CourseData;
@@ -43,6 +44,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         User user = SharedPref.getInstance(getActivity()).getUser();
         binding.tvNameHome.setText("Hello, " + user.getFullName());
+
+        binding.rvLatestCourseHome.setOnClickListener(this);
 
         return binding.getRoot();
     }
@@ -77,6 +80,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.choose_language_home:
                 Intent a = new Intent(getContext(), ChooseLanguageActivity.class);
                 startActivity(a);
+                break;
+            case R.id.rv_latest_course_home:
+                startActivity(new Intent(getContext(), GrammarActivity.class));
                 break;
         }
     }
